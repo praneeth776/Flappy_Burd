@@ -26,6 +26,7 @@ public class Bird_script : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         Time.timeScale = 0;
         logic.GameOver();
     }
