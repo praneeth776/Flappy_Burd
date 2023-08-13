@@ -5,6 +5,7 @@ using UnityEngine;
 public class PipeSpawn_Script : MonoBehaviour
 {
     public GameObject Pipe;
+    public GameObject Coin;
     public float spawnRate = 2;
     private float timer = 0;
     public float heightOffset = 0;
@@ -12,7 +13,7 @@ public class PipeSpawn_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnPipe();
+        SpawnPipeAndCoin();
     }
 
     // Update is called once per frame
@@ -24,16 +25,30 @@ public class PipeSpawn_Script : MonoBehaviour
         }
         else
         {
-            SpawnPipe();
+            SpawnPipeAndCoin();
             timer = 0;
         }
         
     }
 
-    void SpawnPipe()
+    void SpawnPipeAndCoin()
+    {
+        float randomRange = RandomRange();
+        float randomCoinGen = Random.Range(0, 6);
+
+        Instantiate(Pipe, new Vector3(transform.position.x, randomRange,0), transform.rotation);
+
+        if (randomCoinGen <= 2)
+        {
+            Instantiate(Coin, new Vector3(transform.position.x, randomRange, 0), transform.rotation);
+        }
+    }
+
+    float RandomRange()
     {
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
-        Instantiate(Pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint),0), transform.rotation);
+        return Random.Range(lowestPoint, highestPoint);
     }
+
 }
