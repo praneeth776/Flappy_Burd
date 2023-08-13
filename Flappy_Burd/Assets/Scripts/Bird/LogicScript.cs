@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
 {
+    public GameObject gameOverScreen;
     public int playerScore = 0;
     public Text scoreText;
 
@@ -13,5 +14,10 @@ public class LogicScript : MonoBehaviour
     {
         playerScore += scoreToAdd;
         scoreText.text = playerScore.ToString();
+    }
+
+    public void GameOver()
+    {
+        gameOverScreen.SetActive(true);
     }
 }

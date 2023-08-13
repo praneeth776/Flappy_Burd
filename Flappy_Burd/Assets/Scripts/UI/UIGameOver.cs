@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIGameOver : MonoBehaviour
 {
-    public GameObject gameOverScreen;
+    
 
     [SerializeField] Button _playAgainGame;
     // Start is called before the first frame update
@@ -26,8 +26,5 @@ public class UIGameOver : MonoBehaviour
         ScenesManager.Instance.LoadNewGame();
     }
 
-    public void GameOver()
-    {
-        gameOverScreen.SetActive(true);
-    }
+   
 }

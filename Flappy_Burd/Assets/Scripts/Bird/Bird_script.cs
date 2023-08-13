@@ -6,12 +6,13 @@ public class Bird_script : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public int velocity;
-    public UIGameOver logic;
+    public LogicScript logic;
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<UIGameOver>();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame
@@ -25,9 +26,7 @@ public class Bird_script : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (logic != null)
-        {
-            logic.GameOver();
-        }
+
+        logic.GameOver();
     }
 }
