@@ -31,6 +31,7 @@ public class Coin_Script : MonoBehaviour
         if (collision.gameObject.layer == 3)
         {
             logic.addCoin(1);
+            
             Destroy(gameObject);
         }
     }
