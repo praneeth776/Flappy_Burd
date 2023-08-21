@@ -8,18 +8,22 @@ public class LogicScript : MonoBehaviour
     public GameObject gameOverScreen;
     public int playerScore = 0;
     public int totalCoin;
+    public int highScore;
     public Text scoreText;
     public Text coinText;
+    public Text highScoreText;
 
    
     private void Awake()
     {
         totalCoin = PlayerPrefs.GetInt("Total Coins", 0);
+        highScore = PlayerPrefs.GetInt("High Score", 0);
     }
 
     private void Update()
     {
         coinText.text = totalCoin.ToString();
+        highScoreText.text = highScore.ToString();
     }
 
     [ContextMenu("Increase Score")]
@@ -28,6 +32,12 @@ public class LogicScript : MonoBehaviour
         playerScore += scoreToAdd;
         
         scoreText.text = playerScore.ToString();
+
+        if (playerScore > highScore)
+        {
+            highScore = playerScore;
+            PlayerPrefs.SetInt("High Score", highScore);
+        }
     }
     [ContextMenu("Increase Coin")]
     public void addCoin(int coinToAdd)
