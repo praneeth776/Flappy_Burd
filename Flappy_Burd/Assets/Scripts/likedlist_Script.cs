@@ -6,6 +6,13 @@ using UnityEngine;
 public class likedlist_Script : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public SpriteRenderer birdSprite;
+    public Sprite sprite1;
+    public Sprite sprite2;
+    public Sprite sprite3;
+
+    public StoreLinkedList options = new StoreLinkedList();
     void Start()
     {
         
@@ -170,7 +177,7 @@ public class StoreLinkedList
     }
 
     
-    public Node remove(int index)
+    /*public Node remove(int index)
     {
         if (index < 0 || index >= size)
         {
@@ -208,6 +215,7 @@ public class StoreLinkedList
 
 
     }
+    */
 
 }
 
