@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopMenu : MonoBehaviour
+public class RightItem : MonoBehaviour
 {
     public SpriteRenderer birdSprite;
     public List<Sprite> options = new List<Sprite>();
 
     private int currentOption = 0;
 
-    public static ShopMenu Instance;
+    public static RightItem Instance;
 
     private void Awake()
     {
@@ -20,18 +20,18 @@ public class ShopMenu : MonoBehaviour
     {
         currentOption++;
 
-        if(currentOption >= options.Count)
+        if (currentOption >= options.Count)
         {
             currentOption = 0;
         }
 
-        birdSprite.sprite = options[currentOption]; 
+        birdSprite.sprite = options[currentOption];
     }
 
     public void PrevOption()
     {
         currentOption--;
-        if(currentOption < 0)
+        if (currentOption < 0)
         {
             currentOption = options.Count - 1;
 
@@ -39,7 +39,4 @@ public class ShopMenu : MonoBehaviour
 
         birdSprite.sprite = options[currentOption];
     }
-
-
-
 }
