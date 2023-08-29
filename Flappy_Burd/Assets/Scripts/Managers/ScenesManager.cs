@@ -17,7 +17,8 @@ public class ScenesManager : MonoBehaviour
     public enum Scene
     {
         MainMenu,
-        SampleScene
+        SampleScene,
+        Shop
     }
 
     public void LoadScene(Scene scene)
@@ -40,5 +41,9 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene(Scene.MainMenu.ToString());
     }
 
+    public void LoadShop()
+    {
+        SceneManager.LoadScene(Scene.Shop.ToString());
+    }
 
 }
