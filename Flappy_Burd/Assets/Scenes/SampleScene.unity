@@ -777,7 +777,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 0.0335, y: 0.06, z: 0}
-  m_LocalScale: {x: 6.067079, y: 1, z: 3.966707}
+  m_LocalScale: {x: 10, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -930,8 +930,8 @@ MonoBehaviour:
   totalCoin: 0
   highScore: 0
   scoreText: {fileID: 655753210}
-  coinText: {fileID: 0}
-  highScoreText: {fileID: 0}
+  coinText: {fileID: 1195983201}
+  highScoreText: {fileID: 1204567209}
 --- !u!1 &907094426
 GameObject:
   m_ObjectHideFlags: 0
