@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee88c151441825848ae3276c01bdb41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pipe: {fileID: 2312017356657308436, guid: 278d8a29f9acd3b4d81740d6c1052bf0, type: 3}
+  Pipe: {fileID: 9070764883678646150, guid: 13e0c71dad2154af28153b3fe7c4eae9, type: 3}
   Coin: {fileID: 6518347120378858916, guid: baef0205b09157e438d9db1215d8446c, type: 3}
   spawnRate: 5
   heightOffset: 10
