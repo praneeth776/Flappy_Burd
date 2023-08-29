@@ -23,7 +23,9 @@ public class UIGameOver : MonoBehaviour
 
     private void LoadNewGame()
     {
+        
         ScenesManager.Instance.LoadNewGame();
+        Time.timeScale = 1;
     }
 
    
