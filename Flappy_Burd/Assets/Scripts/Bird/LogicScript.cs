@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
 {
+
+    public static LogicScript Instance;
     public GameObject gameOverScreen;
     public int playerScore = 0;
     public int totalCoin;
@@ -18,6 +20,7 @@ public class LogicScript : MonoBehaviour
     {
         totalCoin = PlayerPrefs.GetInt("Total Coins", 0);
         highScore = PlayerPrefs.GetInt("High Score", 0);
+        Instance = this;
     }
 
     private void Update()

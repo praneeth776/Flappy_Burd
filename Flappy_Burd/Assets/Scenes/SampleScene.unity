@@ -833,7 +833,7 @@ MonoBehaviour:
   totalCoin: 0
   highScore: 0
   scoreText: {fileID: 655753210}
-  coinText: {fileID: 1156582553}
+  coinText: {fileID: 0}
   highScoreText: {fileID: 0}
 --- !u!1 &907094426
 GameObject:
@@ -930,7 +930,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 655753209}
-  - {fileID: 1156582555}
+  - {fileID: 1195983199}
   - {fileID: 1204567208}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1051,7 +1051,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!1 &1156582552
+--- !u!1 &1195983198
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1059,9 +1059,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1156582555}
-  - component: {fileID: 1156582554}
-  - component: {fileID: 1156582553}
+  - component: {fileID: 1195983199}
+  - component: {fileID: 1195983200}
+  - component: {fileID: 1195983201}
   m_Layer: 5
   m_Name: Coin
   m_TagString: Untagged
@@ -1069,13 +1069,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1156582553
+--- !u!224 &1195983199
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195983198}
+  m_LocalRotation: {x: -0, y: 0.0050314725, z: -0, w: 0.99998736}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 907094430}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.577, z: 0}
+  m_AnchorMin: {x: 0.21526833, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -216, y: 39}
+  m_SizeDelta: {x: -75, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1195983200
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195983198}
+  m_CullTransparentMesh: 1
+--- !u!114 &1195983201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156582552}
+  m_GameObject: {fileID: 1195983198}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -1103,33 +1130,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!222 &1156582554
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156582552}
-  m_CullTransparentMesh: 1
---- !u!224 &1156582555
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156582552}
-  m_LocalRotation: {x: -0, y: 0.0050314725, z: -0, w: 0.99998736}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 907094430}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.577, z: 0}
-  m_AnchorMin: {x: 0.21526833, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -216, y: 25}
-  m_SizeDelta: {x: -75, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1199847152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   totalCoin: 0
   highScore: 0
   scoreText: {fileID: 655753210}
-  coinText: {fileID: 1156582553}
+  coinText: {fileID: 1195983201}
   highScoreText: {fileID: 1204567209}
 --- !u!4 &1580464254
 Transform:

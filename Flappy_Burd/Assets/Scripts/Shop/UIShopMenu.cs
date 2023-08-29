@@ -18,7 +18,7 @@ public class UIShopMenu : MonoBehaviour
 
     private void StartMainMenu()
     {
-        PrefabUtility.SaveAsPrefabAsset(_character,"Assets/TheBirdSprite.prefab");
+        
         ScenesManager.Instance.LoadMainMenu();
     }
 
