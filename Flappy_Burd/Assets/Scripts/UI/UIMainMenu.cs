@@ -17,7 +17,6 @@ public class UIMainMenu : MonoBehaviour
     private void StartNewGame()
     {
         ScenesManager.Instance.LoadNewGame();
-        Time.timeScale = 1;
     }
 
     private void StartShop()
