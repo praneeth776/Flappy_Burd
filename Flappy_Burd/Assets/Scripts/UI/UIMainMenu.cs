@@ -7,11 +7,13 @@ public class UIMainMenu : MonoBehaviour
 {
     [SerializeField] Button _newGame;
     [SerializeField] Button _shop;
+    [SerializeField] Button _quit;
     // Start is called before the first frame update
     void Start()
     {
         _newGame.onClick.AddListener(StartNewGame);
         _shop.onClick.AddListener(StartShop);
+        _quit.onClick.AddListener(Exit);
     }
 
     private void StartNewGame()
@@ -23,5 +25,10 @@ public class UIMainMenu : MonoBehaviour
     private void StartShop()
     {
         ScenesManager.Instance.LoadShop();
+    }
+
+    private void Exit()
+    {
+        Application.Quit();
     }
 }
