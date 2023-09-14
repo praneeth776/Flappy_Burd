@@ -1156,10 +1156,10 @@ GameObject:
   m_Component:
   - component: {fileID: 957792855}
   - component: {fileID: 957792858}
-  - component: {fileID: 957792857}
   - component: {fileID: 957792856}
   - component: {fileID: 957792860}
   - component: {fileID: 957792859}
+  - component: {fileID: 957792861}
   m_Layer: 3
   m_Name: TheBird
   m_TagString: Untagged
@@ -1196,43 +1196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 957792858}
-  velocity: 27
+  velocity: 28
   logic: {fileID: 0}
---- !u!58 &957792857
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957792853}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 1.2}
-  serializedVersion: 2
-  m_Radius: 250
 --- !u!50 &957792858
 Rigidbody2D:
   serializedVersion: 4
@@ -1333,6 +1298,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &957792861
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957792853}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 46.441803, y: -2.99693}
+  m_Size: {x: 578.6792, y: 455.83698}
+  m_Direction: 1
 --- !u!1 &1195983198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,10 +2198,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 957792855}
-  - {fileID: 266913906}
   - {fileID: 907094430}
   - {fileID: 1406291921}
   - {fileID: 1278999102}
   - {fileID: 250030053}
   - {fileID: 827087908}
+  - {fileID: 266913906}
   - {fileID: 349072202}

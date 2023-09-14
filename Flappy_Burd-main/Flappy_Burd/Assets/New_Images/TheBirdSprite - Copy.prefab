@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3094733380989505562}
   - component: {fileID: 9203001057593823102}
   m_Layer: 0
-  m_Name: TheBirdSprite
+  m_Name: TheBirdSprite - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
