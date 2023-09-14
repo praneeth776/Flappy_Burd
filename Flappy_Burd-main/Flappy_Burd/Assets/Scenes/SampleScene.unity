@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 957792858}
-  velocity: 10
+  velocity: 27
   logic: {fileID: 0}
 --- !u!58 &957792857
 CircleCollider2D:
@@ -1169,7 +1169,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1944,7 +1944,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 957792855}
     m_Modifications:
     - target: {fileID: 5220484920532572344, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_Name
@@ -1952,11 +1952,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.009765625
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.009765625
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_LocalPosition.x
