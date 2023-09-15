@@ -538,6 +538,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3646706336542072740, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
+      propertyPath: m_Size.x
+      value: 9.153848
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646706336542072740, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
+      propertyPath: m_Size.y
+      value: 9.966964
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646706336542072740, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e69ed0d4d4bc04d6087f326991911363, type: 3}
@@ -555,11 +563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.73
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7780386653569102641, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1670,7 +1678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BirdList:
   - {fileID: 21300000, guid: 6b043de503a7d4e0b9fecfc4bec25a6b, type: 3}
-  _character: {fileID: 5220484920532572344, guid: 1e162aaadd41e0346a1d2a2c5ef9e3ed, type: 3}
+  _character: {fileID: 0}
   BIGBird: {fileID: 2067052128}
   LEFTBird: {fileID: 1364529372}
   RIGHTBird: {fileID: 50423797}

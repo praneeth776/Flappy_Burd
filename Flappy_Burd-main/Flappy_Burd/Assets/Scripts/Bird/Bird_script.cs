@@ -23,8 +23,8 @@ public class Bird_script : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (spacecount == 0) { Time.timeScale = 1; }
             spacecount++;
-            Time.timeScale = (float)((float)1 + spacecount * 0.01);
             myRigidbody.velocity = Vector2.up * velocity;
         }
 
