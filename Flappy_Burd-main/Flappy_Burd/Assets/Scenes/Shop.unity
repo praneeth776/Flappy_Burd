@@ -458,16 +458,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   middleSprite: {fileID: 650102338}
   options:
-  - {fileID: 21300000, guid: dce68a074758e48e3b893bc4b1414a25, type: 3}
   - {fileID: 21300000, guid: a9c1b495043f0428e963edc3417339ca, type: 3}
+  - {fileID: 21300000, guid: dce68a074758e48e3b893bc4b1414a25, type: 3}
   - {fileID: 21300000, guid: 3987e7397f41d47f3a7f30f1859f7f1a, type: 3}
   - {fileID: 21300000, guid: e69ed0d4d4bc04d6087f326991911363, type: 3}
   price: {fileID: 1075847504}
   prices:
-  - 10
-  - 4
-  - 3
+  - 5
   - 2
+  - 3
+  - 4
 --- !u!1 &544374019
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133.3, y: -128.7}
+  m_AnchoredPosition: {x: 223, y: -107}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661784149
@@ -1171,7 +1171,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: 5
 --- !u!1 &1117842609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,8 +1525,8 @@ MonoBehaviour:
   birdSprite: {fileID: 2096910197}
   options:
   - {fileID: 21300000, guid: e69ed0d4d4bc04d6087f326991911363, type: 3}
-  - {fileID: 21300000, guid: dce68a074758e48e3b893bc4b1414a25, type: 3}
   - {fileID: 21300000, guid: a9c1b495043f0428e963edc3417339ca, type: 3}
+  - {fileID: 21300000, guid: dce68a074758e48e3b893bc4b1414a25, type: 3}
   - {fileID: 21300000, guid: 3987e7397f41d47f3a7f30f1859f7f1a, type: 3}
 --- !u!1 &1635823251
 GameObject:
@@ -1560,9 +1560,9 @@ MonoBehaviour:
   birdSprite: {fileID: 89930708}
   options:
   - {fileID: 21300000, guid: a9c1b495043f0428e963edc3417339ca, type: 3}
+  - {fileID: 21300000, guid: dce68a074758e48e3b893bc4b1414a25, type: 3}
   - {fileID: 21300000, guid: 3987e7397f41d47f3a7f30f1859f7f1a, type: 3}
   - {fileID: 21300000, guid: e69ed0d4d4bc04d6087f326991911363, type: 3}
-  - {fileID: 21300000, guid: dce68a074758e48e3b893bc4b1414a25, type: 3}
 --- !u!4 &1635823253
 Transform:
   m_ObjectHideFlags: 0
