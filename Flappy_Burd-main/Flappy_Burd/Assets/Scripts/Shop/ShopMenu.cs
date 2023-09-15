@@ -8,6 +8,7 @@ public class ShopMenu : MonoBehaviour
     public List<Sprite> options = new List<Sprite>();
 
     private int currentOption = 0;
+    
 
     public static ShopMenu Instance;
 
@@ -18,6 +19,7 @@ public class ShopMenu : MonoBehaviour
 
     public void NextOption()
     {
+        Debug.Log("options length: " + options.Count.ToString());
         currentOption++;
 
         if(currentOption >= options.Count)

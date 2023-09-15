@@ -10,6 +10,8 @@ public class Buy : MonoBehaviour
 {
     [SerializeField] Button buyButton;
     [SerializeField] GameObject _character;
+
+
     void Start()
     {
         buyButton.onClick.AddListener(canBuy);
@@ -18,11 +20,20 @@ public class Buy : MonoBehaviour
     // Update is called once per frame
     public void canBuy()
     {
-        if (PlayerPrefs.GetInt("Total Coins") >= int.Parse(MiddleItemScript.Instance.price.text))
+        /*if (PlayerPrefs.GetInt("Total Coins") >= int.Parse(MiddleItemScript.Instance.price.text))
         {
             Debug.Log("Item bought");
             PlayerPrefs.SetInt("Total Coins", PlayerPrefs.GetInt("Total Coins") - int.Parse(MiddleItemScript.Instance.price.text));
             PrefabUtility.SaveAsPrefabAsset(_character, "Assets/TheBirdSprite.prefab");
+        }*/
+
+        if (PlayerPrefs.GetInt("Total Coins") >= int.Parse(MiddleItemScript.Instance.price.text))
+        {
+            Debug.Log("Item bought");
+            PlayerPrefs.SetInt("Total Coins", PlayerPrefs.GetInt("Total Coins") - int.Parse(MiddleItemScript.Instance.price.text));
+            _character.GetComponent<SpriteRenderer>().sprite = MiddleItemScript.Instance.middleSprite.sprite;
+            TheBirds.Instance.BirdList.Add(_character.GetComponent<SpriteRenderer>().sprite);
         }
+
     }
 }

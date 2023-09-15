@@ -18,7 +18,8 @@ public class ScenesManager : MonoBehaviour
     {
         MainMenu,
         SampleScene,
-        Shop
+        Shop,
+        Skins
     }
 
     public void LoadScene(Scene scene)
@@ -45,5 +46,11 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.Shop.ToString());
     }
+
+    public void LoadSkins()
+    {
+        SceneManager.LoadScene(Scene.Skins.ToString());
+    }
+
 
 }
