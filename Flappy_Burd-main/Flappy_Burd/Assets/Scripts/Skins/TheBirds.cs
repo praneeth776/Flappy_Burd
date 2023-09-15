@@ -6,7 +6,7 @@ using UnityEditor;
 
 public class TheBirds : MonoBehaviour
 {
-    public List<Sprite> BirdList = new List<Sprite>();
+    [SerializeField]public List<Sprite> BirdList = new List<Sprite>();
     public GameObject _character;
     
     private int BigBirdIndex ;
@@ -43,7 +43,7 @@ public class TheBirds : MonoBehaviour
         {
             BigBirdIndex = 1;
             LeftBirdIndex = 0;
-            RightBirdIndex = 0;
+            RightBirdIndex = 2;
         }
 
         BIGBird.sprite = BirdList[BigBirdIndex];

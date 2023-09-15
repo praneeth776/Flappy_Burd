@@ -18,6 +18,7 @@ public class LeftItem : MonoBehaviour
 
     public void NextOption()
     {
+        Debug.Log("Options list length : " + options.Count);
         currentOption++;
 
         if (currentOption >= options.Count)
@@ -30,6 +31,7 @@ public class LeftItem : MonoBehaviour
 
     public void PrevOption()
     {
+        Debug.Log("Options list length : " + options.Count);
         currentOption--;
         if (currentOption < 0)
         {

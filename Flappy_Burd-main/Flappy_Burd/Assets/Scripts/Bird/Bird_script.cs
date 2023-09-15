@@ -28,11 +28,13 @@ public class Bird_script : MonoBehaviour
             myRigidbody.velocity = Vector2.up * velocity;
         }
 
-        if(myRigidbody.position.y>30 || myRigidbody.position.y < -30)
+        if(myRigidbody.position.y < -30)
         {
             Time.timeScale = 0;
             logic.GameOver();
         }
+
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
