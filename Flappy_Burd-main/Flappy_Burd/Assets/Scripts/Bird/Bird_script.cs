@@ -8,9 +8,15 @@ public class Bird_script : MonoBehaviour
     public int velocity;
     public LogicScript logic;
     private int spacecount = 0;
-   
+    [SerializeField] GameObject _character;
+
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        _character.GetComponent<SpriteRenderer>().sprite = TheBirds.Instance.BirdList[PlayerPrefs.GetInt("Bird Index",0)];
+    }
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();

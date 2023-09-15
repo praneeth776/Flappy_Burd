@@ -12,6 +12,8 @@ public class TheBirds : MonoBehaviour
     private int BigBirdIndex ;
     private int LeftBirdIndex ;
     private int RightBirdIndex ;
+
+    private int birdIndex;
     
 
     public SpriteRenderer BIGBird;
@@ -20,7 +22,7 @@ public class TheBirds : MonoBehaviour
 
     public static TheBirds Instance;
     
-
+    
 
     private void Start()
     {
@@ -54,6 +56,7 @@ public class TheBirds : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        birdIndex = PlayerPrefs.GetInt("Bird Index", 0);
 
     }
 
@@ -97,6 +100,7 @@ public class TheBirds : MonoBehaviour
     {
         //PrefabAssetType prefabPath = ()AssetDatabase.LoadAssetAtPath("Assets/TheBirdSprite.prefab", typeof(PrefabAssetType));
         _character.GetComponent<SpriteRenderer>().sprite = BirdList[BigBirdIndex];
+        PlayerPrefs.SetInt("Bird Index",BigBirdIndex);
         //AssetDatabase.OpenAsset(prefabPath);
         
     }

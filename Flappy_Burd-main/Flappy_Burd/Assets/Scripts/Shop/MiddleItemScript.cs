@@ -8,7 +8,7 @@ public class MiddleItemScript : MonoBehaviour
     public SpriteRenderer middleSprite;
     public List<Sprite> options = new List<Sprite>();
     public Text price;
-    private List<string> prices = new List<string>();//[2,3,Sprite bought,5]
+    public List<string> prices = new List<string>();//[2,3,Sprite bought,5]
 
 
     private int currentOption = 0;
