@@ -5,15 +5,21 @@ using UnityEngine.UI;
 
 public class UIGameMenu : MonoBehaviour
 {
-    [SerializeField] Button _mainMenuGame;
+    
+    [SerializeField] Button _pause;
+    public GameObject pauseScreen;
     // Start is called before the first frame update
     void Start()
     {
-        _mainMenuGame.onClick.AddListener(LoadMainMenu);
+        pauseScreen.SetActive(false);
+        _pause.onClick.AddListener(setPauseScreen);
     }
 
-    private void LoadMainMenu()
+   
+
+    private void setPauseScreen()
     {
-        ScenesManager.Instance.LoadMainMenu();
+        pauseScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 }

@@ -13,7 +13,7 @@ public class MiddleItemScript : MonoBehaviour
 
     private int currentOption = 0;
 
-    public static MiddleItemScript Instance;
+    public static MiddleItemScript Instance { get; private set; }
 
     private void Awake()
     {
@@ -22,6 +22,7 @@ public class MiddleItemScript : MonoBehaviour
 
     public void NextOption()
     {
+        Debug.Log(options);
         currentOption++;
 
         if (currentOption >= options.Count)
@@ -35,6 +36,7 @@ public class MiddleItemScript : MonoBehaviour
 
     public void PrevOption()
     {
+        Debug.Log(options);
         currentOption--;
         if (currentOption < 0)
         {

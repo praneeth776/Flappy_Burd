@@ -46,8 +46,6 @@ public class LogicScript : MonoBehaviour
     {
         totalCoin += coinToAdd;
         PlayerPrefs.SetInt("Total Coins", totalCoin);
-       
-
     }
 
     public void GameOver()

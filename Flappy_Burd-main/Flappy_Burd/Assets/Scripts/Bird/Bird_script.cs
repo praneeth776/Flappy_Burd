@@ -7,15 +7,15 @@ public class Bird_script : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public int velocity;
     public LogicScript logic;
-    private int spacecount = 0;
-    [SerializeField] GameObject _character;
+    public static int spacecount = 0;
+    
 
 
     // Start is called before the first frame update
 
     private void Awake()
     {
-        _character.GetComponent<SpriteRenderer>().sprite = TheBirds.Instance.BirdList[PlayerPrefs.GetInt("Bird Index",0)];
+       
     }
     void Start()
     {
@@ -29,8 +29,7 @@ public class Bird_script : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (spacecount == 0) { Time.timeScale = 1; }
-            spacecount++;
+            Time.timeScale = 1;
             myRigidbody.velocity = Vector2.up * velocity;
         }
 
