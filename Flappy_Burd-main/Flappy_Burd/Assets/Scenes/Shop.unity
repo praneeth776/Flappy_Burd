@@ -532,7 +532,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buyButton: {fileID: 661784149}
   _character: {fileID: 1366970648}
-  Birds: {fileID: 0}
 --- !u!1 &580846640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,9 +1238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '4
-
-'
+  m_Text: 20
 --- !u!1 &1117842609
 GameObject:
   m_ObjectHideFlags: 0

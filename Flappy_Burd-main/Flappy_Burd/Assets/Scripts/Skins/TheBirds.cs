@@ -7,21 +7,20 @@ using UnityEditor;
 public class TheBirds : MonoBehaviour
 {
     [SerializeField]public List<Sprite> BirdList = new List<Sprite>();
-    
     public GameObject _character;
     
     private int BigBirdIndex ;
     private int LeftBirdIndex ;
     private int RightBirdIndex ;
 
-    
+    private int birdIndex;
     
 
     public SpriteRenderer BIGBird;
     public SpriteRenderer LEFTBird;
     public SpriteRenderer RIGHTBird;
 
-    public static TheBirds Instance { get; private set; }
+    public static TheBirds Instance;
     
     
 
@@ -50,8 +49,6 @@ public class TheBirds : MonoBehaviour
         }
 
         BIGBird.sprite = BirdList[BigBirdIndex];
-        //BIGBird.drawMode = SpriteDrawMode.Sliced;
-        
         LEFTBird.sprite = BirdList[LeftBirdIndex];
         RIGHTBird.sprite = BirdList[RightBirdIndex];
     }
@@ -59,6 +56,7 @@ public class TheBirds : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        birdIndex = PlayerPrefs.GetInt("Bird Index", 0);
 
     }
 
@@ -100,21 +98,14 @@ public class TheBirds : MonoBehaviour
 
     public void select()
     {
-        
+        //PrefabAssetType prefabPath = ()AssetDatabase.LoadAssetAtPath("Assets/TheBirdSprite.prefab", typeof(PrefabAssetType));
         _character.GetComponent<SpriteRenderer>().sprite = BirdList[BigBirdIndex];
-        
+        PlayerPrefs.SetInt("Bird Index",BigBirdIndex);
+        //AssetDatabase.OpenAsset(prefabPath);
         
     }
 
-    public static void Add(Sprite sprite)
-    {
-        Instance.BirdList.Add(sprite);
-    }
-
-    public static List<Sprite> getList()
-    {
-        return Instance.BirdList;
-    }
+    
 
 
 }
