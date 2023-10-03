@@ -14,6 +14,7 @@ public class UIGameOver : MonoBehaviour
         if (_playAgainGame != null)
         {
             _playAgainGame.onClick.AddListener(LoadNewGame);
+            
         }
         else
         {
@@ -21,11 +22,14 @@ public class UIGameOver : MonoBehaviour
         }
     }
 
+
+
     private void LoadNewGame()
     {
         
         ScenesManager.Instance.LoadNewGame();
         Time.timeScale = 1;
+        Bird_script.spacecount = 0;
     }
 
    

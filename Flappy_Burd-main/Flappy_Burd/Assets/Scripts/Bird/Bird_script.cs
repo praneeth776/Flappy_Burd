@@ -9,13 +9,13 @@ public class Bird_script : MonoBehaviour
     public LogicScript logic;
     public static int spacecount = 0;
     
-
+    
 
     // Start is called before the first frame update
 
     private void Awake()
     {
-       
+        
     }
     void Start()
     {
@@ -29,11 +29,13 @@ public class Bird_script : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Time.timeScale = 1;
+            if (spacecount == 0) { Time.timeScale = 1; }
+            
+            spacecount++;
             myRigidbody.velocity = Vector2.up * velocity;
         }
 
-        if(myRigidbody.position.y < -30)
+        if(myRigidbody.position.y < -30) 
         {
             Time.timeScale = 0;
             logic.GameOver();

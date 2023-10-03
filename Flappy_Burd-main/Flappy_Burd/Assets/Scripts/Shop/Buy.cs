@@ -10,7 +10,7 @@ public class Buy : MonoBehaviour
 {
     [SerializeField] Button buyButton;
     [SerializeField] GameObject _character;
-    List<Sprite> list = TheBirds.Instance.BirdList;
+    public TheBirds Birds;
 
     Sprite currentSprite;
     int price;
@@ -18,6 +18,7 @@ public class Buy : MonoBehaviour
 
     void Start()
     {
+        Birds = GameObject.FindGameObjectWithTag("Birds").GetComponent<TheBirds>();
         buyButton.onClick.AddListener(canBuy);
     }
 
@@ -29,7 +30,7 @@ public class Buy : MonoBehaviour
         
 
         
-        if (!list.Contains(MiddleItemScript.Instance.middleSprite.sprite))
+        if (!Birds.BirdList.Contains(MiddleItemScript.Instance.middleSprite.sprite))
         {
             if (PlayerPrefs.GetInt("Total Coins") >= int.Parse(MiddleItemScript.Instance.price.text))
             {
@@ -40,7 +41,7 @@ public class Buy : MonoBehaviour
 
                 _character.GetComponent<SpriteRenderer>().sprite = MiddleItemScript.Instance.middleSprite.sprite;// It changes the current birdsprite to the sprite just bought
 
-                TheBirds.Add(MiddleItemScript.Instance.middleSprite.sprite);// It saves the sprite we bought in a list in skins.
+                Birds.BirdList.Add(MiddleItemScript.Instance.middleSprite.sprite);// It saves the sprite we bought in a list in skins.
 
                 Debug.Log("Saved Birds : " + TheBirds.Instance.BirdList.Count);
             }
