@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
 {
-
     public GameObject gameOverScreen;
     public int playerScore = 0;
     public int totalCoin;
