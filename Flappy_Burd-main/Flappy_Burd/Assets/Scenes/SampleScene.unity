@@ -1403,6 +1403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f754bf2093941898865e2a5aa6e4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 0}
   gameOverScreen: {fileID: 889327717}
   playerScore: 0
   totalCoin: 0
@@ -2082,6 +2083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f754bf2093941898865e2a5aa6e4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 557805974}
   gameOverScreen: {fileID: 889327717}
   playerScore: 0
   totalCoin: 0
