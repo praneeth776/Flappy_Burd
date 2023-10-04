@@ -52,5 +52,6 @@ public class LogicScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         pause.enabled = false;
+
     }
 }
