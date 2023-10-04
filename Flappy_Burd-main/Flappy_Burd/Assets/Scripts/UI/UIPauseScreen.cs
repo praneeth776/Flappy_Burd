@@ -21,6 +21,7 @@ public class UIPauseScreen : MonoBehaviour
     private void Resume()
     {
         pauseScreen.SetActive(false);
+        Bird_script.spacecount = 0;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Time.timeScale = 1;
@@ -35,6 +36,11 @@ public class UIPauseScreen : MonoBehaviour
     private void LoadNewGame()
     {
         ScenesManager.Instance.LoadNewGame();
+        Bird_script.spacecount = 0;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Time.timeScale = 1;
+        }
     }
 
     

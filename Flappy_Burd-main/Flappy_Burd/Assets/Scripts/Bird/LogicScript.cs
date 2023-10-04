@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LogicScript : MonoBehaviour
 {
+    public Button pause;
     public GameObject gameOverScreen;
     public int playerScore = 0;
     public int totalCoin;
@@ -50,5 +51,6 @@ public class LogicScript : MonoBehaviour
     public void GameOver()
     {
         gameOverScreen.SetActive(true);
+        pause.enabled = false;
     }
 }
